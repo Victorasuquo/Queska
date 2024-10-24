@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+jinja2
+aiofiles
+pydantic
+SQLAlchemy
+databases
+psycopg2-binary  # if you're using PostgreSQL
+mysql-connector-python  # if you're using MySQL (optional)
+python-multipart 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queska - Your AI-Powered Akwa Ibom Travel Guide</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/main.js" defer></script>
+</head>
+<body>
+    <!-- Header Section with AI Personalization -->
+    <header style="background-image: url('/static/assets/akwa_ibom_bg.jpg'); background-size: cover; color: white;">
+        <img src="/static/assets/queska_logo.png" alt="Queska Logo" style="width: 150px; margin-top: 20px;">
+        <h1>Welcome to Queska</h1>
+        <p>Your AI-powered guide to discovering the hidden gems of Akwa Ibom. We make every journey unforgettable and uniquely yours.</p>
+        <button onclick="window.location.href='/tour_packages'" style="padding: 10px 20px; background-color: #ff5c00; border: none; color: white; cursor: pointer;">Explore Our Tours</button>
+    </header>
+
+    <!-- About Queska Section -->
+    <section id="about" style="padding: 50px; text-align: center;">
+        <h2>Why Choose Queska?</h2>
+        <p>At Queska, we believe in more than just sightseeing. We offer personalized travel experiences designed by AI, ensuring every traveler enjoys a tailored journey. Here's what makes us unique:</p>
+
+        <div class="highlights" style="display: flex; justify-content: space-around; margin-top: 40px;">
+            <div class="highlight" style="width: 20%;">
+                <img src="/static/assets/personalized_tours.png" alt="Personalized Tours" style="width: 100px;">
+                <h3>AI-Powered Personalization</h3>
+                <p>Our advanced AI algorithms craft travel itineraries based on your preferences, offering you a unique journey each time.</p>
+            </div>
+            <div class="highlight" style="width: 20%;">
+                <img src="/static/assets/local_experience.png" alt="Local Experiences" style="width: 100px;">
+                <h3>Local Experiences</h3>
+                <p>From Ibom Plaza to the breathtaking beaches of Ibeno, explore hidden gems only the locals know about, with expert guides to enrich your experience.</p>
+            </div>
+            <div class="highlight" style="width: 20%;">
+                <img src="/static/assets/real_time_updates.png" alt="Real-Time Updates" style="width: 100px;">
+                <h3>Real-Time Recommendations</h3>
+                <p>Queska provides real-time recommendations based on weather, events, and your location. Never miss a beat on your journey.</p>
+            </div>
+            <div class="highlight" style="width: 20%;">
+                <img src="/static/assets/cultural_discovery.png" alt="Cultural Discovery" style="width: 100px;">
+                <h3>Cultural Immersion</h3>
+                <p>Immerse yourself in the rich culture of Akwa Ibom. Visit the Amalgamation House, take part in Ekpe festivals, and witness local artistry firsthand.</p>
+            </div>
+            <div class="highlight" style="width: 20%;">
+                <img src="/static/assets/sustainability.png" alt="Sustainable Tourism" style="width: 100px;">
+                <h3>Sustainable Tourism</h3>
+                <p>We’re committed to eco-friendly tourism, promoting responsible travel that supports local communities and protects the environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Recommendations Section -->
+    <section id="ai-recommendations" style="background-color: #f7f7f7; padding: 50px;">
+        <h2 style="text-align: center;">Discover Akwa Ibom Like Never Before</h2>
+        <p style="text-align: center;">With Queska, explore the most popular attractions and hidden treasures across Akwa Ibom, all tailored to your preferences.</p>
+
+        <div class="image-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px;">
+            <div>
+                <img src="/static/assets/ibeno_beach.jpg" alt="Ibeno Beach" style="width: 100%; height: auto;">
+                <h3>Ibeno Beach</h3>
+                <p>Unwind at the longest sand beach in West Africa. With clear waters and serene views, Ibeno Beach is a must-see for all nature lovers.</p>
+            </div>
+            <div>
+                <img src="/static/assets/amalgamation_house.jpg" alt="Amalgamation House" style="width: 100%; height: auto;">
+                <h3>Amalgamation House</h3>
+                <p>Step back in time and visit where Nigeria’s history was shaped. The Amalgamation House offers a fascinating look into the country’s colonial past.</p>
+            </div>
+            <div>
+                <img src="/static/assets/akwa_ibom_stadium.jpg" alt="Godswill Akpabio International Stadium" style="width: 100%; height: auto;">
+                <h3>Godswill Akpabio Stadium</h3>
+                <p>Catch a live event at the ‘Nest of Champions,’ a world-class stadium known for hosting thrilling sports and cultural events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voice Tour Guide Section -->
+    <section id="voice-guide" style="padding: 50px; text-align: center;">
+        <h2>Let Queska Be Your Personal Travel Companion</h2>
+        <button onclick="speak('Welcome to Queska! Discover Ibeno Beach, the Amalgamation House, Ibom Plaza, and more. Let us guide you through an unforgettable adventure!')"
+            style="padding: 15px 30px; background-color: #ff5c00; color: white; border: none; cursor: pointer;">
+            Click for Voice Tour Guide
+        </button>
+        <div id="map" style="width: 100%; height: 400px; margin-top: 20px;"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #222; color: white; padding: 20px; text-align: center;">
+        <p>&copy; 2024 Queska. All rights reserved.</p>
+        <p>Your journey begins with us. Explore, discover, and experience Akwa Ibom like never before.</p>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
